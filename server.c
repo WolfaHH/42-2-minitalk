@@ -21,7 +21,6 @@ static void signal_handler(int sig, siginfo_t *info, void *ctx)
             return;
         }
         ft_printf("%c", character);
-        fflush(stdout);
         character = 0;
         kill(sender_pid, SIGUSR1);
     }
